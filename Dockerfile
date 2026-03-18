@@ -21,8 +21,8 @@ RUN mkdir -p /opt
 
 WORKDIR /opt
 
-RUN wget https://downloads.sourceforge.net/project/weka/weka-3-8/3.8.6/weka-3-8-6.zip \
-    && unzip weka-3-8-6.zip \
+RUN wget -q https://downloads.sourceforge.net/project/weka/weka-3-8/3.8.6/weka-3-8-6.zip \
+    && unzip -q weka-3-8-6.zip \
     && mv weka-3-8-6 weka \
     && rm weka-3-8-6.zip
 
