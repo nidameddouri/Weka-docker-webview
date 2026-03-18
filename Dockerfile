@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt install -y \
     wget \
     unzip \
-    openjdk-11-jre \
+    openjdk-17-jre \
     xvfb \
     fluxbox \
     x11vnc \
